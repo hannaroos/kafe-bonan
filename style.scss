@@ -1,0 +1,108 @@
+// =====================================================
+//  Övning: Sass – Kafé Bönan
+//  Den här filen är just nu VANLIG CSS (all CSS är giltig SCSS!).
+//  Följ instruktionerna i uppgiftsbeskrivningen, del 1–5.
+//  Alla filer ligger i samma mapp – style.css skapas bredvid denna fil.
+// =====================================================
+
+// DEL 2: Skapa _variables.scss (i samma mapp) och hämta in den här med @use
+// DEL 4: Skapa _mixins.scss (i samma mapp) och hämta in den här med @use
+// DEL 5: Hämta in den inbyggda modulen sass:color med @use
+
+
+// ---------- Bas ----------
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #2b2118;
+  background-color: #fdf8f3;
+  line-height: 1.6;
+}
+
+// ---------- Header & nav (DEL 3: skriv om med nesting och &) ----------
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #6f4e37;
+}
+
+.header__logo {
+  color: #fdf8f3;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.nav__link {
+  color: #fdf8f3;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #e8a33d;
+  text-decoration: underline;
+}
+
+.nav__link:focus-visible {
+  outline: 2px solid #e8a33d;
+  outline-offset: 4px;
+}
+
+// ---------- Hero (DEL 3: skriv om med nesting och &) ----------
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f3e5d8;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  color: #6f4e37;
+}
+
+.hero__text {
+  margin-bottom: 1.5rem;
+}
+
+// ---------- Knappar (DEL 5) ----------
+// TODO: .btn
+//  - bakgrund $color-accent, text $color-text, padding 0.75rem 1.5rem
+//  - border-radius $radius, ingen understrykning, fet text, display inline-block
+//  - &:hover → bakgrund 10 % mörkare med color.adjust()
+//  - &--small → mindre padding (0.4rem 1rem) och font-size 0.9rem
+
+
+// ---------- Meny & kort (DEL 4) ----------
+// TODO: .menu – padding 3rem 2rem, max-width 1000px, centrerad (margin-inline: auto)
+//        &__title – centrerad text, margin-bottom 2rem
+//        &__grid – 1 kolumn på mobil, 3 kolumner från tablet (använd din mq-mixin)
+
+// TODO: .card – vit bakgrund, padding 1.5rem, border-radius $radius, skugga
+//        &__title, &__price (fet, i $color-primary)
+//        &--featured – 3px ram i $color-accent
+
+
+// ---------- Footer ----------
+.footer {
+  padding: 2rem;
+  text-align: center;
+  color: #fdf8f3;
+  background-color: #6f4e37;
+}

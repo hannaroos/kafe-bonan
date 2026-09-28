@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kafé Bönan</title>
+  <!-- OBS! Länka alltid till den KOMPILERADE css-filen – aldrig till .scss -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="header__logo">Kafé Bönan</a>
+    <nav aria-label="Huvudmeny">
+      <ul class="nav">
+        <li><a href="#meny" class="nav__link">Meny</a></li>
+        <li><a href="#om-oss" class="nav__link">Om oss</a></li>
+        <li><a href="#kontakt" class="nav__link">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="hero__title">Nybryggt kaffe &amp; hembakat</h1>
+      <p class="hero__text">Mitt i stan sedan 1998. Välkommen in!</p>
+      <a href="#meny" class="btn">Se menyn</a>
+    </section>
+
+    <section id="meny" class="menu">
+      <h2 class="menu__title">Meny</h2>
+      <div class="menu__grid">
+        <article class="card">
+          <h3 class="card__title">Bryggkaffe</h3>
+          <p class="card__text">Mellanrost från Colombia. Påtår ingår.</p>
+          <p class="card__price">35 kr</p>
+          <a href="#" class="btn btn--small">Beställ</a>
+        </article>
+        <article class="card card--featured">
+          <h3 class="card__title">Kanelbulle</h3>
+          <p class="card__text">Veckans favorit – bakad varje morgon.</p>
+          <p class="card__price">30 kr</p>
+          <a href="#" class="btn btn--small">Beställ</a>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Havrelatte</h3>
+          <p class="card__text">Dubbel espresso med skummad havredryck.</p>
+          <p class="card__price">48 kr</p>
+          <a href="#" class="btn btn--small">Beställ</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="kontakt" class="footer">
+    <p>Kafé Bönan · Storgatan 12 · Öppet alla dagar 8–18</p>
+  </footer>
+</body>
+</html>
