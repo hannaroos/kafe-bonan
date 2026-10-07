@@ -1,0 +1,17 @@
+@use "variables" as *;
+
+// @mixin flex-center {
+//     flex-direction: row;
+// }
+
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+@mixin mq($bp) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}

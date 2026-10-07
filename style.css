@@ -48,6 +48,9 @@ body {
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding: 4rem 2rem;
   text-align: center;
   background-color: #f3e5d8;
@@ -58,6 +61,25 @@ body {
 }
 .hero__text {
   margin-bottom: 1.5rem;
+}
+
+.menu {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+.menu__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.menu__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .menu__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .footer {
