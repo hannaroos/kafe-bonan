@@ -37,13 +37,14 @@ body {
   gap: 1rem;
   padding: 1rem 2rem;
   background-color: $color-primary;
-}
 
-.header__logo {
-  color: $color-bg;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
+    &__logo {
+      color: $color-bg;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
 }
 
 .nav {
@@ -51,21 +52,21 @@ body {
   gap: 1.5rem;
   list-style: none;
   padding: 0;
-}
 
-.nav__link {
-  color: #fdf8f3;
-  text-decoration: none;
-}
+    &__link {
+      color: $color-bg;
+      text-decoration: none;
 
-.nav__link:hover {
-  color: $color-accent;
-  text-decoration: underline;
-}
+        &:hover {
+          color: $color-accent;
+          text-decoration: underline;
+        }
 
-.nav__link:focus-visible {
-  outline: 2px solid $color-accent;
-  outline-offset: 4px;
+        &:focus-visible {
+          outline: 2px solid $color-accent;
+          outline-offset: 4px;
+        }
+    }
 }
 
 // ---------- Hero (DEL 3: skriv om med nesting och &) ----------
@@ -73,15 +74,15 @@ body {
   padding: 4rem 2rem;
   text-align: center;
   background-color: $color-bg-alt;
-}
 
-.hero__title {
-  font-size: 2.5rem;
-  color: $color-primary;
-}
+    &__title {
+      font-size: 2.5rem;
+      color: $color-primary;
+    }
 
-.hero__text {
-  margin-bottom: 1.5rem;
+    &__text {
+      margin-bottom: 1.5rem;
+    }
 }
 
 // ---------- Knappar (DEL 5) ----------
