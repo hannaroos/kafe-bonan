@@ -11,6 +11,9 @@
 
 
 // ---------- Bas ----------
+
+@use "variables" as *;
+
 *,
 *::before,
 *::after {
@@ -19,9 +22,9 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", serif;
-  color: #2b2118;
-  background-color: #fdf8f3;
+  font-family: $font-main;
+  color: $color-text;
+  background-color: $color-bg;
   line-height: 1.6;
 }
 
@@ -33,11 +36,11 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 1rem 2rem;
-  background-color: #6f4e37;
+  background-color: $color-primary;
 }
 
 .header__logo {
-  color: #fdf8f3;
+  color: $color-bg;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -56,12 +59,12 @@ body {
 }
 
 .nav__link:hover {
-  color: #e8a33d;
+  color: $color-accent;
   text-decoration: underline;
 }
 
 .nav__link:focus-visible {
-  outline: 2px solid #e8a33d;
+  outline: 2px solid $color-accent;
   outline-offset: 4px;
 }
 
@@ -69,12 +72,12 @@ body {
 .hero {
   padding: 4rem 2rem;
   text-align: center;
-  background-color: #f3e5d8;
+  background-color: $color-bg-alt;
 }
 
 .hero__title {
   font-size: 2.5rem;
-  color: #6f4e37;
+  color: $color-primary;
 }
 
 .hero__text {
@@ -103,6 +106,6 @@ body {
 .footer {
   padding: 2rem;
   text-align: center;
-  color: #fdf8f3;
-  background-color: #6f4e37;
+  color: $color-bg;
+  background-color: $color-primary;
 }
