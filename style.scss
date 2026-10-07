@@ -123,6 +123,27 @@ body {
     }
 }
 
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: $radius;
+  box-shadow: $shadow;
+
+    &__title {
+      font-weight: bold;
+      color: $color-primary;
+    }
+
+    &__price {
+      font-weight: bold;
+      color: $color-primary;
+    }
+
+    &--featured {
+      border: 3px solid $color-accent;
+    }
+}
+
 // ---------- Footer ----------
 .footer {
   padding: 2rem;
